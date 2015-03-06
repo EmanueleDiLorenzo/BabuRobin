@@ -8,8 +8,14 @@
 import scrapy
 
 
-class OurAppItem(scrapy.Item):
-    title = scrapy.Field()
-    link = scrapy.Field()
-    desc = scrapy.Field()
-
+class TeamItem(scrapy.Item):
+    position = scrapy.Field()
+    name = scrapy.Field()
+    points = scrapy.Field()
+    played = scrapy.Field()
+    won = scrapy.Field()
+    drawn = scrapy.Field()
+    lost = scrapy.Field()
+    goals_for = scrapy.Field()
+    goals_against = scrapy.Field()
+    goal_difference = scrapy.Field()
